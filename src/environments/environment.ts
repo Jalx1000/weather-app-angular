@@ -1,9 +1,17 @@
+/* eslint-disable @typescript-eslint/naming-convention */
 // This file can be replaced during build by using the `fileReplacements` array.
 // `ng build --prod` replaces `environment.ts` with `environment.prod.ts`.
 // The list of file replacements can be found in `angular.json`.
 
 export const environment = {
-  production: false
+  production: false,
+  options:{
+    method: 'GET',
+    headers: {
+      // 'X-RapidAPI-Key': 'f26b826ef9mshd153403c40a0b37p160f97jsn660f888cad85',
+      'X-RapidAPI-Host': 'open-weather13.p.rapidapi.com'
+    }
+  }
 };
 
 /*
